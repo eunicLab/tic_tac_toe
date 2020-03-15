@@ -1,65 +1,56 @@
-.game{
-    text-align: center;
-    background-color: #282c34;
-    min-height: 100vh;
-    min-width:424px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    padding-top: 5%;
-    padding-bottom: 5%
-
-  
+.game {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 424px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.game-board{
-    display:block;
-    width:60%;
-    border-radius: 6px;
-    background-color: white;
-    color:black;
-    padding-top: 5%;
-    padding-bottom: 5%
+.game-board {
+  display: block;
+  width: 60%;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.square{
-
-  border:  2px solid #333;
-  height:  80px;
-  width:  80px;
-  text-align:  center;
+.square {
+  border: 2px solid #333;
+  height: 80px;
+  width: 80px;
+  text-align: center;
   vertical-align: middle;
-  font-family:  "Comic Sans MS", cursive, sans-serif;
-  font-size:  60px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 60px;
   cursor: pointer;
 }
 
-
-
-.squareWin{
-
-  border:  2px solid #333;
-  height:  80px;
-  width:  80px;
-  text-align:  center;
+.squareWin {
+  border: 2px solid #333;
+  height: 80px;
+  width: 80px;
+  text-align: center;
   vertical-align: middle;
-  font-family:  "Comic Sans MS", cursive, sans-serif;
-  font-size:  60px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 60px;
   cursor: pointer;
   background-color: green;
 }
 
-
-
-
 .endgame {
-  display:none;
+  display: none;
   width: 200px;
   top: 150px;
-  background-color: rgba(84,255,226, 0.95);
+  background-color: rgba(84, 255, 226, 0.95);
   position: absolute;
   left: 50%;
   margin-left: -100px;
@@ -71,31 +62,26 @@
   font-size: 2em;
 }
 
-
-.btn{
-color: white; 
-background: transparent;
-border-radius: 6px;
-border-color:green ;
-padding: 16px 32px;
-text-align: center;
-display: inline-block;
-font-size: 16px; 
-margin: 4px 16px;
--webkit-transition-duration: 0.4s; /* Safari */ 
-transition-duration: 0.4s; 
-cursor: pointer;
-border: 2px solid green;
-
+.btn {
+  color: white;
+  background: transparent;
+  border-radius: 6px;
+  border-color: green;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid green;
 }
 
-
-
-
-.formStyle{
-  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+.formStyle {
+  background: -webkit-linear-gradient(bottom, #cccccc, #eeeeee 175px);
+  background: -moz-linear-gradient(bottom, #cccccc, #eeeeee 175px);
+  background: linear-gradient(bottom, #cccccc, #eeeeee 175px);
   margin: auto;
   position: relative;
   width: 30%;
@@ -111,13 +97,13 @@ border: 2px solid green;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-
 }
 
+.noDisplay {
+  display: none;
+}
 
-.noDisplay{display:none;}
-
-input[type=text] {
+input[type='text'] {
   width: 90%;
   display: block;
   border: 1px solid #999;
@@ -129,9 +115,10 @@ input[type=text] {
   cursor: pointer;
 }
 
-
-.buttonStyle{
+.buttonStyle {
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
 }
-
+button:focus {
+  outline: 0;
+}
