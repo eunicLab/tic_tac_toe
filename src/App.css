@@ -9,8 +9,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .game-board {
@@ -118,7 +116,14 @@ input[type='text'] {
 .buttonStyle {
   font-weight: bold;
   cursor: pointer;
+  background-color: green;
+  color: white;
 }
 button:focus {
   outline: 0;
+}
+
+.nobuttonStyle {
+  font-weight: bold;
+  cursor: pointer;
 }

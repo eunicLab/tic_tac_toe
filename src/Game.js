@@ -103,7 +103,11 @@ class Game extends React.Component {
       global.clickcounter = move;
       return (
         <li key={move}>
-          <button className='buttonStyle' onClick={() => this.jumpTo(move)}>
+          <button
+            className={
+              this.state.stepNumber === move ? 'buttonStyle' : 'noButtonStyle'
+            }
+            onClick={() => this.jumpTo(move)}>
             {desc}
           </button>
         </li>
